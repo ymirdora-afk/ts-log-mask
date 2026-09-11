@@ -1,0 +1,42 @@
+{
+  "name": "ts-log-mask",
+  "version": "1.0.0",
+  "description": "A structured log sanitizer that masks sensitive fields in log output before it reaches stdout.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./patterns": {
+      "types": "./dist/patterns.d.ts",
+      "import": "./dist/patterns.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist-test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.9"
+  },
+  "keywords": [
+    "log",
+    "mask",
+    "sanitizer",
+    "redact",
+    "pii",
+    "security",
+    "structured-logging"
+  ],
+  "license": "MIT"
+}
